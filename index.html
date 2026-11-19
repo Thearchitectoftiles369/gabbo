@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gabbo – Talk about what you love</title>
+<meta name="description" content="Gabbo matches you with one person who wants to talk about the same thing. Pick a topic, chat, move on. No photos, no profiles. Join the waiting list.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./"><img src="favicon.svg" alt="" width="40" height="40"><span>Gabbo</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Talk about <span class="grad">what you love</span>.</h1>
+      <p class="lead">Pick a topic, and Gabbo matches you with one person who wants to talk about the same thing. A real conversation, then you both move on.</p>
+      <ul class="points">
+        <li><strong>One topic</strong><span>Movies, games, football, music, books and more. You start from what you care about.</span></li>
+        <li><strong>One person</strong><span>A private chat with a single stranger. No groups, no photos, no profiles.</span></li>
+        <li><strong>Nothing stays</strong><span>Chats are deleted a few minutes after they end, unless someone reports them. Report and block are built in from day one.</span></li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="join-title">
+      <h2 id="join-title">Join the waiting list</h2>
+      <p class="sub">Gabbo is not available yet and there is no release date. Leave your email and we'll write to you once, when it opens. 18+ only.</p>
+      <form id="join" novalidate>
+        <label class="field" for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required placeholder="you@example.com">
+
+        <fieldset>
+          <legend>What would you like to talk about? <span class="hint">(optional)</span></legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="interest" value="movies_tv"><span>Movies &amp; TV</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="gaming"><span>Gaming</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="sports"><span>Sports</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="music"><span>Music</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="books"><span>Books</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="tech_science"><span>Technology &amp; Science</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="travel_food"><span>Travel &amp; Food</span></label>
+            <label class="chip"><input type="checkbox" name="interest" value="lifestyle"><span>Lifestyle</span></label>
+          </div>
+        </fieldset>
+
+        <label class="field" for="language">Language(s) you chat in <span class="hint">(optional)</span></label>
+        <input id="language" name="language" type="text" maxlength="40" autocomplete="off" placeholder="e.g. English, Español">
+
+        <div class="trap" aria-hidden="true">
+          <label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+        </div>
+
+        <label class="consent"><input type="checkbox" name="consent" required>
+          <span>I am 18 or older and I agree to the <a href="privacy.html">Privacy Policy</a>. Gabbo may use my email to tell me when the app is available.</span></label>
+
+        <button class="go" type="submit">Join the waiting list</button>
+        <div id="msg" class="msg" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="mailto:gabbosupport@gmail.com">Contact</a></nav>
+    <p>&copy; 2026 Gabbo. This page uses no cookies and no tracking.</p>
+  </footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

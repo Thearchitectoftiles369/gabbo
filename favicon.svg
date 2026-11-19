@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+ <defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00C2FF"/><stop offset="0.5" stop-color="#3A2BEF"/><stop offset="1" stop-color="#C21CF0"/></linearGradient>
+  <radialGradient id="dark" cx="0.5" cy="0.5" r="0.42"><stop offset="0.15" stop-color="#0B0A3A" stop-opacity="0.75"/><stop offset="1" stop-color="#0B0A3A" stop-opacity="0"/></radialGradient>
+  <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6FF0FF"/><stop offset="1" stop-color="#1E50FF"/></linearGradient>
+  <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B46BFF"/><stop offset="1" stop-color="#F03BD6"/></linearGradient>
+  <linearGradient id="ring" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5CEBFF"/><stop offset="1" stop-color="#FF4FD8"/></linearGradient>
+  <clipPath id="front"><polygon points="-439,839 1463,221 1463,1600 -439,1600"/></clipPath>
+  <clipPath id="round"><rect width="1024" height="1024" rx="230"/></clipPath>
+ </defs>
+ <g clip-path="url(#round)">
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect width="1024" height="1024" fill="url(#dark)"/>
+  <ellipse cx="512" cy="530" rx="300" ry="128" transform="rotate(-18 512 530)" fill="none" stroke="url(#ring)" stroke-width="34"/>
+  <path d="M663.3 718.3 A175 138 0 1 1 752.1 673.7 L770 790 Z" fill="url(#g2)" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M388.2 594.7 A200 155 0 1 0 286.8 544.6 L300 690 Z" fill="url(#g1)" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="14" stroke-linejoin="round"/>
+  <circle cx="370" cy="445" r="30" fill="#FFFFFF"/><circle cx="445" cy="445" r="30" fill="#FFFFFF"/><circle cx="520" cy="445" r="30" fill="#FFFFFF"/>
+  <g clip-path="url(#front)"><ellipse cx="512" cy="530" rx="300" ry="128" transform="rotate(-18 512 530)" fill="none" stroke="url(#ring)" stroke-width="34"/></g>
+ </g>
+</svg>
