@@ -28,6 +28,7 @@
     <section class="card" aria-labelledby="join-title">
       <h2 id="join-title">Join the waiting list</h2>
       <p class="sub">Gabbo is not available yet and there is no release date. Leave your email and we'll write to you once, when it opens. 18+ only.</p>
+      <p class="sub"><strong>Android first.</strong> We plan to start with Android, and iPhone later.</p>
       <form id="join" novalidate>
         <label class="field" for="email">Email</label>
         <input id="email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required placeholder="you@example.com">
@@ -48,6 +49,14 @@
 
         <label class="field" for="language">Language(s) you chat in <span class="hint">(optional)</span></label>
         <input id="language" name="language" type="text" maxlength="40" autocomplete="off" placeholder="e.g. English, Español">
+
+        <label class="field" for="platform">Your phone <span class="hint">(optional)</span></label>
+        <select id="platform" name="platform">
+          <option value="">Prefer not to say</option>
+          <option value="android">Android</option>
+          <option value="iphone">iPhone</option>
+          <option value="other">Other</option>
+        </select>
 
         <div class="trap" aria-hidden="true">
           <label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>

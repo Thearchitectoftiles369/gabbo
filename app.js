@@ -7,6 +7,13 @@
   var box = document.getElementById("msg");
   var button = form.querySelector("button.go");
 
+  // Optional source label from the address, e.g. ?s=reddit.  Server ignores bad values.
+  var source = null;
+  var found = /[?&]s=([^&#]*)/.exec(location.search);
+  if (found) {
+    try { source = decodeURIComponent(found[1]).toLowerCase().slice(0, 30); } catch (e) { source = null; }
+  }
+
   function show(kind, text) {
     box.className = "msg show " + kind;
     box.textContent = text;
@@ -23,6 +30,8 @@
       interests: interests,
       language: form.language.value,
       consent: form.consent.checked,
+      platform: form.platform.value || null,
+      source: source,
       website: form.website.value
     };
     button.disabled = true;
